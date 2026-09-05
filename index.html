@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Загрузка TeorMedTJ...</title>
+  <script>
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    var androidUrl = "https://play.google.com/store/apps/details?id=tj.atsmu2.app&hl=ru";
+    var iosUrl = "https://apps.apple.com/tj/app/teormedtj/id6756610215";
+
+    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+      window.location.replace(iosUrl);
+    } else if (/android/i.test(ua)) {
+      window.location.replace(androidUrl);
+    }
+  </script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; text-align: center; padding: 40px 15px; }
+    .btn { display: block; max-width: 260px; margin: 15px auto; padding: 14px; background: #007aff; color: #fff; text-decoration: none; border-radius: 10px; font-weight: bold; }
+    .android { background: #01875f; }
+  </style>
+</head>
+<body>
+  <p>Перенаправление в магазин...</p>
+  <p>Если страница не открылась автоматически:</p>
+  <a class="btn" href="https://apps.apple.com/tj/app/teormedtj/id6756610215">Скачать в App Store</a>
+  <a class="btn android" href="https://play.google.com/store/apps/details?id=tj.atsmu2.app&hl=ru">Скачать в Google Play</a>
+</body>
+</html>
